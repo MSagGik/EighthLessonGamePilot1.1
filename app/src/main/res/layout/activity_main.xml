@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/background" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Спасти планету от астероидов"
+        android:textColor="#008A84"
+        android:textSize="35sp"
+        android:layout_above="@+id/play"
+        android:layout_below="@+id/highScore"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Играть"
+        android:textStyle="bold"
+        android:textColor="#024340"
+        android:textSize="50sp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/highScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="#008A84"
+        android:textSize="25sp"
+        android:text="Рекорд"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/volumeOn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginStart="17dp"
+        app:srcCompat="@drawable/ic_baseline_volume_up_24" />
+
+</RelativeLayout>
